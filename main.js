@@ -21,7 +21,7 @@ const questions = {
             article: "GDPR Article 35"
         },
         {
-            question: "Can HR use biometric data (e.g., fingerprint time clocks) without employee consent?",
+            question: "Can HR use biometric data (e.g. fingerprint time clocks) without employee consent?",
             options: ["Yes, if justified for security", "No, explicit consent is mandatory", "Only if data is encrypted"],
             correct: 1,
             article: "GDPR Article 9 & Recital 51"
@@ -83,7 +83,7 @@ const questions = {
             article: "GDPR Article 6(1)(a) & Recital 32"
         },
         {
-            question: "Is pre-ticked opt-in consent boxes compliant for newsletter signups?",
+            question: "Is pre ticked opt-in consent boxes compliant for newsletter signups?",
             options: ["Yes", "No", "Only for existing customers"],
             correct: 1,
             article: "GDPR Recital 32"
@@ -199,17 +199,17 @@ const questions = {
         article: "Article 35"
       },
       {
-        question: "Which of the following is a recommended board-level GDPR compliance strategy?",
+        question: "Which of the following is a recommended board level GDPR compliance strategy?",
         options: [
           "Delegate all GDPR tasks to IT only",
           "Integrate GDPR into company-wide risk management and review regularly at board meetings",
           "Wait for a breach before acting"
         ],
         correct: 1,
-        article: "Best Practice"
+        article: "Article 5(2)"
       },
       {
-        question: "In recent real-world cases, what liability have CEOs faced for GDPR violations?",
+        question: "In recent real world cases, what liability have CEOs faced for GDPR violations?",
         options: [
           "Personal criminal prosecution is common",
           "No liability at all",
