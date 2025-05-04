@@ -236,14 +236,15 @@ let score = 0;
 let currentQuestions = [];
 let userAnswers = [];
 
-// these lines of code puts keyboard users focus on the first answer of the quiz 
+// these lines of code puts keyboard users focus on the first answer of the quiz
 //(i primarily wrote this as a bugfix as before this was implemented it would just highlight the answer without a mouse hover) and it made it looked unappealing
+// partially related to the other code that was a bugfix
 function focusFirstOption() {
     const firstOption = quizContainer.querySelector('.quiz-option');
     if (firstOption) firstOption.focus();
 }
 
-// --- Quiz Initialization ---
+// --- the quiz Initialization ---
 function initQuiz(role) {
     currentRole = role;
     currentQuestions = questions[role];
@@ -261,7 +262,7 @@ function initQuiz(role) {
     updateProgressIndicator();
 }
 
-// shows the current question
+//shows the current question
 function showQuestion() {
     updateProgressIndicator();
     // Shows the loading spinner (mainly for visual appeal)
@@ -578,12 +579,12 @@ function displayResultsPage() {
     if (score >= 0.8) message = 'Excellent! You have strong GDPR knowledge.';
     else if (score >= 0.5) message = 'Good effort! Review the missed questions below.';
     else message = 'Keep practicing! Review the explanations below to improve.';
-    // Shows score and message, was originally going to implement time but it got buggy
+    // shows score and message, was originally going to implement time feature but it got buggy
     const scoreEl = document.getElementById('score');
     if (scoreEl) scoreEl.textContent = `${Math.round(score * 100)}%`;
     const perfMsg = document.querySelector('.performance-message');
     if (perfMsg) perfMsg.textContent = message;
-    // Shows review
+    // shows review
     const feedbackContainer = document.getElementById('detailed-feedback');
     if (feedbackContainer) {
         feedbackContainer.innerHTML = '';
